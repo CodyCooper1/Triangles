@@ -1,0 +1,38 @@
+penUp();
+turnRight(90);
+moveForward(10);
+turnLeft(90);//for positioning
+drawRightTriangle(270);
+drawRightTriangle(90);
+function drawRightTriangle(direction) {
+turnTo(direction); //Set perameter to 90 if you need upside-down triangle and 270 for right-side up
+loopTriangle(10);//Number of repetitions to the left
+penUp();
+moveForward(10);
+turnRight(90);
+moveBackward(10);
+loopTriangle(10);
+penUp;
+moveForward(10);
+turnRight(135);
+penUp();
+moveBackward(10);
+loopTriangle(14);  
+}
+
+function loopTriangle (Repetitions) {
+  for (var i = 0; i < Repetitions; i++) { //Loop drawing the triangle 
+  penUp();
+  moveForward(10);
+  penDown();
+  drawTriangle(10);
+}
+}
+
+function drawTriangle (size) {  //This draws the first small triangle that will be in the larger triangle later
+  for (var i = 0; i < 3; i++) { //The loop that draws the triangle
+  moveForward(size);//The size of the triangle (Will be a parameter in the end called size)
+  turnLeft(120); //The angle the triangle turns at
+  
+  }
+}
