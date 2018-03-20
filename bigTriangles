@@ -2,7 +2,7 @@ penUp();
 turnRight(90);
 moveForward(10);
 turnLeft(90);//for positioning
-drawRightTriangle(); //Set angle for left or right
+drawRightTriangle(90); //Set angle for left or right
 
 function drawRightTriangle(direction) {
 turnTo(direction); //Set perameter to 90 if you need upside-down triangle and 270 for right-side up
