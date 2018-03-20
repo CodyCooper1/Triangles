@@ -2,11 +2,11 @@ penUp();
 turnRight(90);
 moveForward(10);
 turnLeft(90);//for positioning
-drawRightTriangle(270);
-drawRightTriangle(90);
+drawRightTriangle(); //Set angle for left or right
+
 function drawRightTriangle(direction) {
 turnTo(direction); //Set perameter to 90 if you need upside-down triangle and 270 for right-side up
-loopTriangle(10);//Number of repetitions to the left
+loopTriangle(10); //Number of repetitions to the left
 penUp();
 moveForward(10);
 turnRight(90);
@@ -33,6 +33,5 @@ function drawTriangle (size) {  //This draws the first small triangle that will 
   for (var i = 0; i < 3; i++) { //The loop that draws the triangle
   moveForward(size);//The size of the triangle (Will be a parameter in the end called size)
   turnLeft(120); //The angle the triangle turns at
-  
   }
 }
