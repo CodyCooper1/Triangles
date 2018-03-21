@@ -6,7 +6,9 @@ turnRight(90);
 moveForward(10);
 turnLeft(90);//for positioning
 drawRightTriangle(90); //Set angle for left or right
+penUp();
 moveBackward(143);
+penDown();
 drawRightTriangle(270);
 penUp();
 moveTo(290, 356);
@@ -18,7 +20,7 @@ moveForward(120);
 turnLeft(90);
 moveForward(126);
 turnLeft(90);
-moveForward(125);
+moveForward(120);
 }
 
 
